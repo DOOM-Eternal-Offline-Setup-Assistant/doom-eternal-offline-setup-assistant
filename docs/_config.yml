@@ -1,0 +1,151 @@
+# DOOM Eternal Offline Setup Assistant - Documentation Site Configuration
+
+# Site settings
+title: "DOOM Eternal Offline Setup Assistant"
+description: "The ultimate offline setup assistant for DOOM Eternal - play without Steam, Bethesda account, or internet connection required!"
+url: "https://doom-eternal-offline-setup-assistant.github.io"
+baseurl: "/doom-eternal-offline-setup-assistant"
+
+# Repository info
+repository: "DOOM-Eternal-Offline-Setup-Assistant/doom-eternal-offline-setup-assistant"
+github_username: "DOOM-Eternal-Offline-Setup-Assistant"
+
+# SEO
+lang: en_US
+image: /assets/images/doom-eternal-banner.png
+logo: /assets/images/logo.png
+
+# Author
+author:
+  name: "DOOM Eternal Offline Setup Assistant Team"
+  email: "support@doom-assistant.com"
+  url: "https://doom-eternal-offline-setup-assistant.github.io"
+
+# Social
+social:
+  name: "DOOM Eternal Setup Assistant"
+  links:
+    - "https://github.com/DOOM-Eternal-Offline-Setup-Assistant/doom-eternal-offline-setup-assistant"
+    - "https://discord.gg/doomassistant"
+    - "https://twitter.com/doomassistant"
+
+# Theme
+theme: minima
+# remote_theme: pages-themes/hacker@v0.2.0
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-redirect-from
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:name/
+  api:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "DOOM Assistant Team"
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+  - scope:
+      path: ""
+      type: "api"
+    values:
+      layout: "api"
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Download"
+    url: "/download/"
+  - title: "Installation"
+    url: "/guides/installation/"
+  - title: "Troubleshooting"
+    url: "/guides/troubleshooting/"
+  - title: "FAQ"
+    url: "/faq/"
+  - title: "Support"
+    url: "/support/"
+
+# Footer links
+footer_links:
+  - title: "GitHub"
+    url: "https://github.com/DOOM-Eternal-Offline-Setup-Assistant/doom-eternal-offline-setup-assistant"
+    icon: "fab fa-github"
+  - title: "Discord"
+    url: "https://discord.gg/doomassistant"
+    icon: "fab fa-discord"
+  - title: "Report Issue"
+    url: "https://github.com/DOOM-Eternal-Offline-Setup-Assistant/doom-eternal-offline-setup-assistant/issues"
+    icon: "fas fa-bug"
+
+# SEO and Analytics
+google_analytics: UA-XXXXXXXXX-X
+search_engine_id: XXXXXXXXXXXXX:XXXXXXXXXX
+
+# Features
+show_excerpts: true
+show_downloads: true
+show_on_github: true
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - .internal/
+
+# Include in processing
+include:
+  - _pages
+
+# Gaming-specific configuration
+gaming:
+  supported_platforms:
+    - "Windows 10"
+    - "Windows 11"
+  supported_controllers:
+    - "Xbox Series X|S"
+    - "PlayStation 5 DualSense"
+    - "PlayStation 4 DualShock"
+    - "Xbox One"
+  minimum_requirements:
+    os: "Windows 10 64-bit (1903 or later)"
+    processor: "Intel Core i5-3570K / AMD FX-8350"
+    memory: "8 GB RAM"
+    graphics: "NVIDIA GTX 1060 / AMD RX 470"
+    directx: "Version 12"
+    storage: "50 GB available space"
+
+# Legal
+legal:
+  copyright: "© 2024 DOOM Eternal Offline Setup Assistant. Educational use only."
+  disclaimer: "This tool is for educational and backup purposes only. Users must own a legitimate copy of DOOM Eternal."
+  dmca_contact: "dmca@doom-assistant.com" 

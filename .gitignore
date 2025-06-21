@@ -1,0 +1,277 @@
+# DOOM Eternal Setup Assistant - .gitignore
+
+# ==============================
+# SECURITY & CREDENTIALS
+# ==============================
+# Never commit sensitive information
+.internal/GITHUB_CREDENTIALS.md
+*credentials*
+*secrets*
+*.key
+*.pem
+*.p12
+*.pfx
+api_keys.txt
+tokens.txt
+
+# ==============================
+# SYSTEM FILES
+# ==============================
+# Operating system generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==============================
+# IDE & EDITOR FILES
+# ==============================
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.sln.docstates
+*.userprefs
+bin/
+obj/
+packages/
+TestResults/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# ==============================
+# BUILD ARTIFACTS
+# ==============================
+# .NET Framework
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.tmp
+
+# NuGet
+packages/
+*.nupkg
+!packages/repositories.config
+
+# MSBuild
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ==============================
+# GAME-SPECIFIC FILES
+# ==============================
+# Never commit actual game files
+*.pak
+*.wad
+*.iwad
+*.pk3
+*.pk7
+DoomEternal.exe
+DOOMEternalx64vk.exe
+idTech*
+
+# Game saves and configs (user-specific)
+saves/
+user_configs/
+*.save
+*.cfg
+*.ini
+
+# Screenshots and recordings
+screenshots/
+recordings/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webm
+*.mp4
+*.avi
+
+# ==============================
+# SETUP ASSISTANT SPECIFIC
+# ==============================
+# User configurations
+user_settings.json
+hardware_profiles.json
+controller_configs/
+graphics_profiles/
+backup_saves/
+
+# Logs and diagnostics
+logs/
+*.log
+crash_dumps/
+error_reports/
+
+# Temporary files
+temp/
+cache/
+downloads/
+extracted/
+
+# ==============================
+# DEVELOPMENT & TESTING
+# ==============================
+# Test artifacts
+test_results/
+coverage/
+*.coverage
+*.coveragexml
+
+# Profiling
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Debug dumps
+*.dmp
+
+# ==============================
+# DOCUMENTATION BUILD
+# ==============================
+# Generated documentation
+docs/_site/
+docs/.jekyll-cache/
+docs/.bundle/
+docs/vendor/
+site/
+_site/
+
+# ==============================
+# DEPLOYMENT & DISTRIBUTION
+# ==============================
+# Release artifacts
+releases/
+dist/
+setup_files/
+installers/
+*.msi
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Certificates and signing
+certificates/
+signing/
+*.cer
+*.crt
+
+# ==============================
+# BACKUP FILES
+# ==============================
+# Various backup formats
+*.bak
+*.backup
+*.old
+*.orig
+*~
+*.swp
+*.swo
+
+# ==============================
+# NODE.JS (if used for build tools)
+# ==============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+.node_repl_history
+
+# ==============================
+# PYTHON (if used for tools)
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==============================
+# ENVIRONMENT FILES
+# ==============================
+.env*
+!.env.example
+*.local
+
+# ==============================
+# MISCELLANEOUS
+# ==============================
+# Ignore these but allow manual addition
+!.gitkeep
+!README.md
+!LICENSE
+!CHANGELOG.md
+!CONTRIBUTING.md
+!CODE_OF_CONDUCT.md
+!SECURITY.md
+
+# Ignore OS-specific files
+*.lnk        # Windows shortcuts
+.fuse_hidden*# Linux fuse
+.directory   # KDE
+.Trash-*     # Linux trash
+
+# Ignore temporary network files
+.netrwhist
+*~
+.nfs*
+
+# ==============================
+# SPECIAL CASES
+# ==============================
+# Allow certain files even if they match patterns above
+!docs/assets/*.png
+!docs/assets/*.jpg
+!docs/assets/*.gif
+!.github/
+!.github/**/*
+
+# Ignore but track some directories
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+# ==============================
+# FINAL NOTES
+# ==============================
+# This .gitignore is designed to protect:
+# 1. User privacy and system security
+# 2. Repository cleanliness
+# 3. Build process integrity
+# 4. Legal compliance (no copyrighted content)
+#
+# Always review before committing new file types! .internal/
+.DS_Store
