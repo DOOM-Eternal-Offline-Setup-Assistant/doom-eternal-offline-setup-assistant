@@ -50,20 +50,10 @@
 - 💾 **Save Manager**: Backup and restore your progress
 - 🔧 **Troubleshooter**: Fixes common issues automatically
 
-## 📸 Screenshots & Preview
+## 🖼 Preview Screenshots
 
-### 🎮 Gameplay Screenshots
-![Intense Combat](https://user-images.githubusercontent.com/1234567/combat.png)
-*Intense demon combat with the Super Shotgun*
-
-![Hell Environment](https://user-images.githubusercontent.com/1234567/hell.png)
-*Stunning hell environments with maximum graphics*
-
-![Weapon Wheel](https://user-images.githubusercontent.com/1234567/weapons.png)
-*Complete weapon arsenal at your disposal*
-
-### 🎬 Gameplay Video
-[![DOOM Eternal Offline Gameplay](https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+![Combat Scene](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuFDYy4Trmq6wxw-YlPcSMBDOvPdmcjpCd5w&s)  
+*Rip and tear through hell with brutal speed*
 
 ## 🚀 Quick Start Guide
 
